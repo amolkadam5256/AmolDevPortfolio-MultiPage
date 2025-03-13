@@ -51,7 +51,7 @@ const SkillItem = ({ name, icon, color }) => (
         <span className="absolute top-[-2rem] left-1/2 transform -translate-x-1/2 md:text-1xl text-sm font-bold text-white opacity-0 group-hover:opacity-100 transition-all duration-300">
             {name}
         </span>
-        <span className={`icon-box my-3 relative flex items-center justify-center md:w-20 md:h-20 w-16 h-16 bg-black rounded-2xl ${color} text-4xl transition-all duration-300 transform hover:scale-110 border-none`}>
+        <span className={`icon-box my-3 relative flex items-center justify-center md:w-20 md:h-20 w-16 h-16 bg-black rounded-full border-yellow-400 ${color} text-4xl transition-all duration-300 transform hover:scale-110 border-none`}>
             {icon}
         </span>
     </li>
