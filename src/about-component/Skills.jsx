@@ -37,7 +37,7 @@ const skills = [
     { name: 'Webpack', icon: <SiWebpack />, color: 'text-gray-500' },
     { name: 'Vite', icon: <SiVite />, color: 'text-orange-500' },
     { name: 'Axios', icon: <SiAxios />, color: 'text-blue-500' },
-    { name: 'React Hook Form', icon: <SiReacthookform />, color: 'text-yellow-500' },
+    { name: 'React_Hook_Form', icon: <SiReacthookform />, color: 'text-yellow-500' },
     { name: 'Oracle', icon: <SiOracle />, color: 'text-blue-500' },
     { name: 'IntelliJ IDEA', icon: <SiIntellijidea />, color: 'text-blue' },
     { name: 'Netlify', icon: <SiNetlify />, color: 'text-blue-500' },
@@ -45,6 +45,7 @@ const skills = [
     { name: 'Yarn', icon: <FaYarn />, color: 'text-blue-500' },
     { name: 'Settings', icon: <MdSettingsApplications />, color: 'text-gray-500' }
 ];
+
 
 const SkillItem = ({ name, icon, color }) => (
     <li className="relative text-center group" data-aos="fade-up" data-aos-duration="1000">

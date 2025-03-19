@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "framer-motion": "^12.4.10",
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^12.5.0",
     "gsap": "^3.12.5",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",

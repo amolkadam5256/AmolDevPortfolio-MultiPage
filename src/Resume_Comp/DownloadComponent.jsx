@@ -34,7 +34,7 @@ const DownloadButton = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center p-5 bg-black text-white">
+    <div className="flex flex-col items-center justify-center p-10 bg-black text-white">
       <motion.button
         className="relative flex items-center justify-center gap-2 px-6 py-3 text-sm md:text-lg lg:text-xl font-semibold text-black bg-white rounded-lg shadow-lg overflow-hidden border border-gray-700"
         onClick={handleDownload}

@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className='bg-black text-white'>
       <Contact_Head_Section></Contact_Head_Section>
-      <Contact_Content_Section></Contact_Content_Section>
+      {/* <Contact_Content_Section></Contact_Content_Section> */}
       <Form></Form>
     </div>
   )

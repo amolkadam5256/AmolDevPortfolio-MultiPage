@@ -7,8 +7,8 @@ const FooterLogo = () => {
         <div>
             <div className="lg:flex lg:items-center lg:justify-between">
                 <section className="py-[70px] mt-0 lg:mt-5 ml-0 md:ml-10">
-                    <div className="mx-auto px-4 sm:container">
-                        <div className="border-stroke dark:border-dark-3 flex items-center pb-6 p-10 bg-white md:bg-black rounded-lg">
+                    <div className="mx-auto px-1 sm:container">
+                        <div className="border-stroke dark:border-dark-3 flex items-center pb-6 p-5 bg-white md:bg-black rounded-lg">
                             <div className="mr-[18px] h-[70px] w-full max-w-[70px] overflow-hidden rounded-xl">
                                 <img
                                     src={assets.ProfileAmol}
@@ -16,7 +16,7 @@ const FooterLogo = () => {
                                     className="h-full w-full object-cover object-center"
                                 />
                             </div>
-                            <div>
+                            <div className='w-full'>
                                 <h4 className="text-black md:text-white mb-1 text-[1.5rem] font-semibold">
                                     Hey Amol Kadam 👋
                                 </h4>
