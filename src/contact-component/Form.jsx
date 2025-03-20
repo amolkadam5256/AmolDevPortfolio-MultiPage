@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 
@@ -9,24 +8,42 @@ const Form = () => {
   const handleSend = (e) => {
     e.preventDefault();
 
+    const serviceID = "service_feth3xs"; // Replace with your actual service ID
+    const publicKey = "cVVb5LAcAeB0fjvof"; // Replace with your actual public key
+
+    // 💌 1️⃣ Send Auto-Reply to User
     emailjs
-      .sendForm(
-        "service_feth3xs", // Replace with your actual service ID
-        "template_zl0sdh8", // Replace with your actual template ID
-        e.target,
-        "cVVb5LAcAeB0fjvof" // Replace with your actual public key
-      )
-      .then(
-        (result) => {
-          console.log("Message sent successfully!", result);
-          setIsSubmitted(true);
-          e.target.reset(); // Clear form after successful submission
-        },
-        (error) => {
-          console.error("Email sending error:", error);
-          setErrorMessage("Failed to send message. Please try again.");
-        }
-      );
+      .sendForm(serviceID, "template_zl0sdh8", e.target, publicKey)
+      .then((result) => {
+        console.log("✅ Auto-reply sent to User!", result);
+
+        // 💌 2️⃣ Send Email to Admin
+        emailjs
+          .send(serviceID, "template_0kjnemo", {
+            name: e.target.name.value,
+            email: e.target.email.value,
+            message: e.target.message.value,
+          }, publicKey)
+          .then((adminResult) => {
+            console.log("✅ Message sent to Admin!", adminResult);
+            setIsSubmitted(true);
+            e.target.reset();
+
+            // Hide the message and show the form again after 30 seconds
+            setTimeout(() => {
+              setIsSubmitted(false);
+            }, 30000);
+          })
+          .catch((adminError) => {
+            console.error("❌ Error sending to Admin:", adminError);
+            setErrorMessage("Failed to send message to Admin.");
+          });
+
+      })
+      .catch((error) => {
+        console.error("❌ Error sending auto-reply:", error);
+        setErrorMessage("Failed to send message. Please try again.");
+      });
   };
 
   const handleReset = () => {
@@ -35,14 +52,17 @@ const Form = () => {
   };
 
   return (
-    <div className="bg-black w-full h-screen mb-1 flex justify-center items-center">
+    <div className="bg-black w-full h-screen flex justify-center items-center">
       {isSubmitted ? (
-        <div className="text-center text-white text-2xl font-bold">
-          Thank you! Your message has been sent.
+        <div className="w-full h-full flex justify-center items-center">
+          <div className="text-center text-white text-2xl font-bold">
+            Thank you! Your message has been sent.
+          </div>
         </div>
       ) : (
-        <div className="md:flex block relative justify-center p-6">
-          <div className="md:w-1/2 w-full">
+        <div className="flex w-full h-full">
+          {/* Model Viewer - Left Half */}
+          <div className="w-1/2 flex justify-center items-center p-6">
             <model-viewer
               alt="laptop"
               src="https://raw.githubusercontent.com/Smit-Prajapati/prajapatismit/b5f434ae4d45d10fe1664d5606ad28e4d9c739af/images/laptop.glb"
@@ -55,21 +75,24 @@ const Form = () => {
               disable-tap
               camera-orbit="-45deg 60deg 9m"
               autoplay
+              className="w-full h-auto"
             ></model-viewer>
           </div>
-          <div>
-            <h1 className="text-3xl md:text-5xl text-white font-bold pl-8">
+
+          {/* Contact Form - Right Half */}
+          <div className="w-1/2 flex flex-col justify-center p-8">
+            <h1 className="text-3xl md:text-5xl text-white font-bold mb-6">
               Get in touch
             </h1>
 
             {errorMessage && (
-              <p className="text-red-500 text-center">{errorMessage}</p>
+              <p className="text-red-500 text-center mb-4">{errorMessage}</p>
             )}
 
             <form
               id="contactForm"
               onSubmit={handleSend}
-              className="md:w-full w-full p-8 bg-transparent"
+              className="w-full bg-transparent"
             >
               <input
                 type="text"
