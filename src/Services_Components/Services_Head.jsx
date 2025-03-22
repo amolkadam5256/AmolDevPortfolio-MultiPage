@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-const TrueFocus = ({
-  sentence = "Online Resume",
+const Services_Head = ({
+  sentence = "Services",
   manualMode = false,
   blurAmount = 5,
   borderColor = "green",
   glowColor = "rgba(255, 255, 255, 0.6)",
   animationDuration = 1,
-  pauseBetweenAnimations = 3,
+  pauseBetweenAnimations = 1,
 }) => {
   const words = sentence.split(" ");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -57,7 +57,7 @@ const TrueFocus = ({
 
   return (
     <div
-      className="relative flex gap-4 justify-center items-center flex-wrap"
+      className="relative flex gap-4 justify-center items-center flex-wrap pt-10"
       ref={containerRef}
     >
       {words.map((word, index) => {
@@ -66,7 +66,7 @@ const TrueFocus = ({
           <span
             key={index}
             ref={(el) => (wordRefs.current[index] = el)}
-            className="relative text-[2rem] sm:text-[3rem] font-black cursor-pointer"
+            className="relative text-[3rem] sm:text-[4rem] font-black cursor-pointer"
             style={
               {
                 filter: manualMode
@@ -141,4 +141,5 @@ const TrueFocus = ({
   );
 };
 
-export default TrueFocus;
+
+export default Services_Head

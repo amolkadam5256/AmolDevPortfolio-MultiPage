@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { FaFacebook, FaInstagram, FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 import '../index.css';
 import assets from '../assets/images/assets';
@@ -13,16 +14,13 @@ const FooterContent = () => {
   return (
     <footer className="mt-16 border-t-2 border-white pt-16">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-4 lg:grid-cols-6 ">
-
         {/* About Us Section */}
         <div className="text-center sm:text-left" data-aos="fade-up">
           <p className="text-lg font-medium text-white">About Us</p>
           <ul className="mt-8 space-y-4 text-sm ml-2">
             {["Company History", "Meet the Team", "Employee Handbook", "Careers"].map(item => (
               <li key={item}>
-                <a className="text-white transition hover:text-red-300" href="#">
-                  {item}
-                </a>
+                <Link className="text-white transition hover:text-red-300" to={`/${item.replace(/ /g, '-').toLowerCase()}`}>{item}</Link>
               </li>
             ))}
           </ul>
@@ -34,9 +32,7 @@ const FooterContent = () => {
           <ul className="mt-8 space-y-4 text-sm ml-2">
             {["Web Development", "Web Design", "Marketing", "Google Ads"].map(item => (
               <li key={item}>
-                <a className="text-white transition hover:text-red-300" href="#">
-                  {item}
-                </a>
+                <Link className="text-white transition hover:text-red-300" to={`/${item.replace(/ /g, '-').toLowerCase()}`}>{item}</Link>
               </li>
             ))}
           </ul>
@@ -48,9 +44,7 @@ const FooterContent = () => {
           <ul className="mt-8 space-y-4 text-sm ml-2">
             {["Online Guides", "Conference Notes", "Forum", "Downloads", "Upcoming Events"].map(item => (
               <li key={item}>
-                <a className="text-white transition hover:text-red-300" href="#">
-                  {item}
-                </a>
+                <Link className="text-white transition hover:text-red-300" to={`/${item.replace(/ /g, '-').toLowerCase()}`}>{item}</Link>
               </li>
             ))}
           </ul>
@@ -62,9 +56,7 @@ const FooterContent = () => {
           <ul className="mt-8 space-y-4 text-sm ml-2">
             {["FAQs", "Support", "Live Chat"].map(item => (
               <li key={item}>
-                <a className="text-white transition hover:text-red-300" href="#">
-                  {item}
-                </a>
+                <Link className="text-white transition hover:text-red-300" to={`/${item.replace(/ /g, '-').toLowerCase()}`}>{item}</Link>
               </li>
             ))}
           </ul>
@@ -100,25 +92,11 @@ const FooterContent = () => {
         </p>
 
         <ul className="mt-4 flex justify-center gap-6 sm:mt-0 sm:justify-start">
-          <a href="https://www.facebook.com/profile.php?id=100055943003261">
-            <FaFacebook className='text-2xl hover:scale-125 text-[#1877f2]' />
-          </a>
-
-          <a href="https://x.com/amolkadam1274">
-            <FaTwitter className='text-2xl text-1xl hover:scale-125 text-[#1877f2]' />
-          </a>
-
-          <a href="https://www.instagram.com/_amol5256?igsh=azgyd2ppcjVteWU5">
-            <FaInstagram className='text-2xl hover:scale-125 text-[#c13584]' />
-          </a>
-
-          <a href="https://github.com/amolkadam5256">
-            <FaGithub className='text-2xl hover:scale-125 text-white' />
-          </a>
-
-          <a href="https://www.linkedin.com/in/amol-kadam-814167329/">
-            <FaLinkedin className='text-2xl hover:scale-125 text-[#0077b5]' />
-          </a>
+          <a href="https://www.facebook.com/profile.php?id=100055943003261"><FaFacebook className='text-2xl hover:scale-125 text-[#1877f2]' /></a>
+          <a href="https://x.com/amolkadam1274"><FaTwitter className='text-2xl text-1xl hover:scale-125 text-[#1877f2]' /></a>
+          <a href="https://www.instagram.com/_amol5256?igsh=azgyd2ppcjVteWU5"><FaInstagram className='text-2xl hover:scale-125 text-[#c13584]' /></a>
+          <a href="https://github.com/amolkadam5256"><FaGithub className='text-2xl hover:scale-125 text-white' /></a>
+          <a href="https://www.linkedin.com/in/amol-kadam-814167329/"><FaLinkedin className='text-2xl hover:scale-125 text-[#0077b5]' /></a>
         </ul>
       </div>
     </footer>
