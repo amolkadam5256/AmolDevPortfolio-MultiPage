@@ -11,7 +11,7 @@ const HomeBottomText = () => {
                 >
                     <h1 className='sm:text-black md:text-white font-[anzo4] text-[1.2rem] md:text-2xl uppercase'>
                         Java Developer | WEBSITE Developer <br />
-                        <span className='text-1xl md:text-2xl font-[anzo3] font-extrabold tracking-[2px] text-black md:text-gray-400 uppercase'>Full Stack Developer</span>
+                        <span className=' text-1xl md:text-2xl font-[anzo3] font-extrabold tracking-[2px] text-black md:text-gray-400 uppercase'>Front-End Developer</span>
                     </h1>
                 </div>
             </div>
