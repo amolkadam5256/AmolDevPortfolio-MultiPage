@@ -59,39 +59,60 @@ const FrontendProjects = () => {
 
   const projects = [
     {
-      title: "Portfolio Website",
+      title: "A-RIA FREIGHT WAYS",
       description: "A personal portfolio website using React and Tailwind CSS.",
-      link: "#",
+      link: "https://a-riafreightways.com",
       github: "https://github.com/yourgithub/portfolio",
-      image: assets.Hobbies,
+      image: assets.Aria,
     },
     {
       title: "E-commerce UI",
       description: "Frontend for an e-commerce store with product filters.",
       link: "#",
       github: "https://github.com/yourgithub/ecommerce-ui",
-      image: assets.Hobbies,
+      image: assets.SharmaFright,
     },
     {
       title: "Dashboard UI",
       description: "A modern dashboard UI with charts and widgets.",
       link: "#",
       github: "https://github.com/yourgithub/dashboard-ui",
-      image: assets.Hobbies,
+      image: assets.DayPlaner,
     },
     {
       title: "Blog Website",
       description: "A simple blog platform with a clean UI.",
       link: "#",
       github: "https://github.com/yourgithub/blog-website",
-      image: assets.Hobbies,
+      image: assets.cell,
     },
     {
       title: "Landing Page",
       description: "A responsive landing page template.",
       link: "#",
       github: "https://github.com/yourgithub/landing-page",
-      image: assets.Hobbies,
+      image: assets.BMI,
+    },
+    {
+      title: "Landing Page",
+      description: "A responsive landing page template.",
+      link: "#",
+      github: "https://github.com/yourgithub/landing-page",
+      image: assets.ColorChanger,
+    },
+    {
+      title: "Landing Page",
+      description: "A responsive landing page template.",
+      link: "#",
+      github: "https://github.com/yourgithub/landing-page",
+      image: assets.Calculater,
+    },
+    {
+      title: "Landing Page",
+      description: "A responsive landing page template.",
+      link: "#",
+      github: "https://github.com/yourgithub/landing-page",
+      image: assets.Ui,
     },
   ];
 
