@@ -14,12 +14,15 @@ import Header from './Home_Componetns/Header';
 // import Cursor from './comman_Component/Cursor';
 import Footer from './Footer_component/Footer';
 import BackToTopButton from './comman_Component/BackToTopButton';
+import LaptopModel from './Home_Componetns/LaptopModel';
 // Import components
 
 // Main App composnent
 const App = () => {
   return (
     <>
+
+    <LaptopModel/>
       <div className='w-full h-full relative bg-white font-[anzo2] overflow-x-hidden'>
 
         {/* <Cursor /> */}

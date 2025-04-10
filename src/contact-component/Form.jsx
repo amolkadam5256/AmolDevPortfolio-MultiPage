@@ -60,9 +60,9 @@ const Form = () => {
           </div>
         </div>
       ) : (
-        <div className="flex w-full h-full">
+        <div className="block w-full h-full md:flex">
           {/* Model Viewer - Left Half */}
-          <div className="w-1/2 flex justify-center items-center p-6">
+          <div className="w-full md:w-1/2 flex justify-center items-center p-6">
             <model-viewer
               alt="laptop"
               src="https://raw.githubusercontent.com/Smit-Prajapati/prajapatismit/b5f434ae4d45d10fe1664d5606ad28e4d9c739af/images/laptop.glb"
@@ -80,7 +80,7 @@ const Form = () => {
           </div>
 
           {/* Contact Form - Right Half */}
-          <div className="w-1/2 flex flex-col justify-center p-8">
+          <div className="w-full md:w-1/2 flex flex-col justify-center p-8">
             <h1 className="text-3xl md:text-5xl text-white font-bold mb-6">
               Get in touch
             </h1>
