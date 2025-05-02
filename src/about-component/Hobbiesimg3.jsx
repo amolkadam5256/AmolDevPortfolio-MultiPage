@@ -28,10 +28,14 @@ const Hobbiesimg3 = () => {
             {/* Text Section */}
             <div className="block justify-center text-center md:order-2 order-1" data-aos="fade-up" data-aos-delay="200">
                 <h2 className="text-3xl md:text-5xl font-[anzo5] py-5">I Love Swimming</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugiat dolor animi!</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat</p>
+                <p>In villages, swimming in rivers, ponds, and wells is a fun tradition.</p>
+                <ul className="list-disc pl-5">
+                    <li className='list-none'><strong>Wells:</strong> Swimming in deep wells is common.</li>
+                    <li className='list-none'><strong>Natural Pools:</strong> Rivers and ponds make perfect swimming spots.</li>
+                </ul>
             </div>
+
+
         </div>
     );
 };

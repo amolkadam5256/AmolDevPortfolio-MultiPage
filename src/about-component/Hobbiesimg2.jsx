@@ -18,9 +18,9 @@ const Hobbiesimg2 = () => {
       {/* Text Section */}
       <div className="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-loop="true">
         <h2 className="text-3xl md:text-5xl font-[anzo5] py-5">watching documentaries <br /> and movies</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat fugiat dolor animi!</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat</p>
+        <li className='list-none'><strong>Planet Earth</strong> - A stunning visual journey through Earth's diverse ecosystems.</li>
+            <li className='list-none'><strong>The Social Dilemma</strong> - A thought-provoking look at the impact of social media on society.</li>
+            
       </div>
 
       {/* Image Section */}

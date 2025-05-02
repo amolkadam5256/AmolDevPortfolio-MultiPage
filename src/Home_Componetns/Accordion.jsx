@@ -12,15 +12,60 @@ const Accordion = () => {
     }, []);
 
     const accordionItems = [
-        { header: "WORK EXPERIENCE", text: "Jul 2019... Front End UI Developer - Cargill Risk Management" },
-        { header: "Jun - Aug 2018", text: "Full Stack Developer - DEAR DIARY" },
-        { header: "Aug - Dec 2017", text: "Full Stack Developer - CCT MAESTRO" },
-        { header: "Apr 2017", text: "Front End Developer - Weather Info" },
-        { header: "Oct 2016", text: "Front End Developer - Random Quote Machine" },
-        { header: "Jun 2016", text: "Front End Developer - Tribute Page" },
-        { header: "2013 - 2015", text: "Web Developer - Scope Watch Tool" },
-        { header: "2011 - 2012", text: "Junior Web Developer - Enable and updated code" },
+        {
+            header: "DoctorDOM UI",
+            text: "User interface component of the DoctorDOM app built with React."
+        },
+        {
+            header: "Portfolio Website",
+            text: "Responsive personal portfolio developed using React.js and Tailwind CSS to showcase skills and projects."
+        },
+        {
+            header: "Java Quiz App",
+            text: "Interactive web-based Java quiz application built with Node.js and Express.js for backend functionality."
+        },
+        {
+            header: "100 Days of Code",
+            text: "Consistent daily coding challenge focused on JavaScript and backend development with progress tracked on GitHub."
+        },
+        {
+            header: "MediPlus Lite",
+            text: "Health-themed responsive frontend project deployed on Vercel."
+        },
+        {
+            header: "Envision Institute Resources",
+            text: "Repository for managing final exam content and resources."
+        },
+        {
+            header: "ColorCrafter UI",
+            text: "Interactive color customization project showcasing dynamic styling with JavaScript."
+        },
+        {
+            header: "The JavaScript Handbook",
+            text: "In-depth JS learning repo focused on mastering operators, control flow, and more."
+        },
+        {
+            header: "BMI Calculator",
+            text: "Simple web app to calculate Body Mass Index with responsive design."
+        },
+        {
+            header: "Amol Dev Portfolio (Multi-Page)",
+            text: "Multi-page version of developer portfolio using React and Tailwind CSS."
+        },
+        {
+            header: "Calculator Project",
+            text: "Basic calculator web app built as a first JavaScript project."
+        },
+        {
+            header: "E-commerce Frontend V1",
+            text: "Frontend UI for an e-commerce site, developed during internship at Brainwave Matrix Solutions."
+        },
+        {
+            header: "Daily Planner App V1",
+            text: "Task planning and scheduling web application developed during internship."
+        },
     ];
+    
 
     return (
         <section className="relative z-20 overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]" >
