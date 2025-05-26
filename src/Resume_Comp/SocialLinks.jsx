@@ -6,7 +6,7 @@ const SocialLinks = () => {
     <div className="flex flex-col items-center space-y-4 my-5">
       <div className="flex space-x-4">
         <a
-          href="https://github.com/username"
+          href="https://github.com/amolkadam5256"
           target="_blank"
           rel="noopener noreferrer"
                   className="flex items-center space-x-2 text-black hover:text-gray-600"
@@ -15,7 +15,7 @@ const SocialLinks = () => {
           <span className="text-sm">GitHub</span>
         </a>
         <a
-          href="https://linkedin.com/in/username"
+          href="https://www.linkedin.com/in/amolkadam77/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center space-x-2 text-black hover:text-blue-700 "
@@ -24,7 +24,7 @@ const SocialLinks = () => {
                   <span className="text-sm">LinkedIn</span>
         </a>
         <a
-          href="https://twitter.com/twittername"
+          href="https://x.com/amolkadam1274"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center space-x-2 text-black hover:text-blue-500 "
@@ -33,7 +33,7 @@ const SocialLinks = () => {
           <span className="text-sm">Twitter</span>
         </a>
         <a
-          href="https://otherplatform.com/username"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center space-x-2 text-black hover:text-purple-600 "

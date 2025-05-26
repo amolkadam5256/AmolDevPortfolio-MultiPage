@@ -15,7 +15,8 @@ const ProfileCard = () => {
         {/* Profile Details */}
         <div className="p-0 sm:p-6 text-center md:text-left flex-1">
           <p className="text-gray-600 text-left  mt-2 pl-0 sm:pl-10 text-[14px] sm:text-[16px]">
-                      Full Stack Developer and Computer Science graduate with a strong foundation in modern web development. Skilled in HTML, CSS, JavaScript, React.js, and frameworks like Tailwind CSS, Bootstrap, and Sass. Experienced in building responsive web applications, enhancing UI/UX, and optimizing performance. Proficient in Git/GitHub for version control and state management using Redux and Context API. Strong backend development skills in Java, Spring Boot, and MySQL, delivering scalable and efficient software solutions. Passionate about creating user-friendly applications that drive meaningful results.
+Full Stack Developer and Computer Science graduate with expertise in modern web development and software engineering. Proficient in frontend technologies including HTML, CSS, JavaScript, React.js, and UI frameworks such as Tailwind CSS, Bootstrap, Sass, and Vite, with a strong focus on building responsive, user-friendly, and performant web applications. Experienced in backend development using Java, Spring Boot, Hibernate, JDBC, Node.js, and MySQL, skilled at designing scalable RESTful APIs and connecting frontend with backend systems seamlessly. Well-versed in version control and collaborative workflows using Git/GitHub, and deploying applications on platforms like Netlify and Vercel. Passionate about delivering efficient, maintainable software solutions that enhance user experience and meet business goals.
+
           </p>
 
 

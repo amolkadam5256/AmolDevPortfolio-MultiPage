@@ -71,8 +71,14 @@ const FooterContent = () => {
                 <div className="DownloadCV">
                   <input type="radio" className="radio-btn" />
                   <a className="download font-bold">Download CV</a>
-                  <a className="open font-bold" href={assets.Resume} download>Open CV</a>
-                </div>
+                  <a
+                    className="open font-bold"
+                    href="https://drive.google.com/file/d/1soHP1TOHLBeuFs5-IVyh8u4Bc86UV2uv/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Open CV
+                  </a>                </div>
                 <button
                   type="submit"
                   className="block rounded-full bg-indigo-500 px-16 py-5 font-bold text-white transition hover:bg-indigo-600"

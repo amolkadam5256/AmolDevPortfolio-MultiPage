@@ -26,12 +26,12 @@ const DownloadButton = () => {
     }, 30);
 
     const link = document.createElement("a");
-    link.href = "/path-to-your-file.pdf"; // Change to actual file path
-    link.download = "sample.pdf"; // Change to desired file name
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  link.href = "https://drive.google.com/uc?export=download&id=1soHP1TOHLBeuFs5-IVyh8u4Bc86UV2uv"; // Direct download link
+  link.download = "Amol_Kadam_Resume.pdf"; // Desired file name
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
   return (
     <div className="flex flex-col items-center justify-center p-10 bg-black text-white">
