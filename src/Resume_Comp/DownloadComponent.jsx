@@ -26,7 +26,7 @@ const DownloadButton = () => {
     }, 30);
 
     const link = document.createElement("a");
-  link.href = "https://drive.google.com/uc?export=download&id=1soHP1TOHLBeuFs5-IVyh8u4Bc86UV2uv"; // Direct download link
+  link.href = "https://drive.google.com/file/d/1MKimtVZBJ8zAm3jyO2nyFAIGcu_qfH4g/view?usp=sharing"; // Direct download link
   link.download = "Amol_Kadam_Resume.pdf"; // Desired file name
   document.body.appendChild(link);
   link.click();

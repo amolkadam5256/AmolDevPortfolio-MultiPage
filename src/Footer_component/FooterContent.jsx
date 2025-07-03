@@ -73,7 +73,7 @@ const FooterContent = () => {
                   <a className="download font-bold">Download CV</a>
                   <a
                     className="open font-bold"
-                    href="https://drive.google.com/file/d/1soHP1TOHLBeuFs5-IVyh8u4Bc86UV2uv/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1MKimtVZBJ8zAm3jyO2nyFAIGcu_qfH4g/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
